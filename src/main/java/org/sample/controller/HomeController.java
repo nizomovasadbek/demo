@@ -10,6 +10,7 @@ public class HomeController {
     @GetMapping("/")
     public String getHome(HttpServletRequest http){
         String str = http.getRemoteAddr() + "<br>";
+        str += "Mahkamov Bahtiyor keting keting keting<br>";
         return str+"<h1>LMS ko't</h1>";
     }
 }
