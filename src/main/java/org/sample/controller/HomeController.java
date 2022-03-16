@@ -9,9 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 public class HomeController {
     @GetMapping("/")
     public String getHome(HttpServletRequest http){
-        String str = http.getLocalAddr()+"<br>"
-                + http.getLocalName() + "<br>" + http.getRemoteAddr() + "<br>" +
-                http.getRemoteHost() + "<br>";
-        return str+"<h1>LMS</h1>";
+        String str = http.getRemoteAddr() + "<br>";
+        return str+"<h1>LMS ko't</h1>";
     }
 }
